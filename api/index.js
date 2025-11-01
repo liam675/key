@@ -1,5 +1,6 @@
 import express from "express";
-import fetch from "node-fetch";
+import fetchPkg from "node-fetch";
+const fetch = fetchPkg.default || fetchPkg;
 import crypto from "crypto";
 import serverless from "serverless-http";
 
